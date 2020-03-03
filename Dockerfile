@@ -19,4 +19,4 @@ COPY ./cmake /usr/src/cmake
 RUN tar -xzf /usr/src/cmake/cmake-3.17.0-rc1.tar.gz --directory /usr/src/cmake && rm -f /usr/src/cmake/cmake-3.17.0-rc1.tar.gz
 RUN cd /usr/src/cmake/cmake-3.17.0-rc1 && ./bootstrap && make && make install
 
-RUN yum install git
+RUN yum install git -y
